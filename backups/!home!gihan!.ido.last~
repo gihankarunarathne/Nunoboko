@@ -1,0 +1,60 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/" . "tmp/")
+ ("/home/gihan/" . ".emacs.d/")
+ ("/home/gihan/.emacs.d/elpa/" . "better-defaults-0.1.2/")
+ ("/home/gihan/alpigc/omi/" . "lib/")
+ ("/home/gihan/alpigc/" . "omi/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/tmp/"
+ "/home/gihan/.emacs.d/"
+ "/home/gihan/alpigc/omi/lib/"
+ "/home/gihan/"
+ "/home/gihan/alpigc/omi/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "test.js"
+ "tmp.js"
+ "##test.el##"
+ "#test.el#"
+ "test.el"
+ "init.el"
+ "game.js"
+ "10-powerline-symbols.conf"
+ "package.json"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/gihan/.emacs.d/" (21602 959 583892 221000) "smooth-scrolling.el" "js-config.el" "auto-complete-config.elc" "eshell/" "places" "#init.el#" "auto-complete-config.el" "../" "ac-comphist.dat" "auto-save-list/" "ac-dict/" "elpa/" "js-comint.el" "ede-projects.el" "defuns-config.el" "init.el" "linum.el" "auto-complete.elc" "popup.el" "auto-complete.el" "column-marker.el" "backups/" "fuzzy.elc" "whitespace.el" "./" "jade-mode/" "fuzzy.el" "popup.elc" "node_emacs")
+
+ ("/tmp/" (21602 1025 63891 624000) "auto-complete-1.3.1/" "webconsole-0.9.5.zip" ".X0-lock" "auto-complete-1.3.1.tar.bz2" "#tmp.js#" "##test.el##" ".bamficonQB44OX" "#test.el#" ".X11-unix/" ".ICE-unix/" "mongodb-27017.sock" "orbit-gihan/" ".com.google.Chrome.WwQ6vo/" "webconsole/" "../" "./")
+
+ ("/home/gihan/" (21602 959 627892 221000) "bin/" ".jenkins/" "Templates/" ".thumbnails/" ".emacs" ".kde/" ".config/" ".ssh/" ".adobe/" ".bash_alias" ".gitk" ".vimrc" ".npm/" "idea/" ".IntelliJIdea13/" ".gradle/" ".dropbox-dist/" ".gimp-2.8/" ".clion10/" ".java/" "Snapshots/" ".screenrc" ".cache/" ".meteor/" ".mongorc.js" ".compiz/" "../" ".dropbox/" ".ido.last" ".cordova/" "hack/" ".macromedia/" ".android/" ".pm2/" "foss/" ".netrc" ".wine/" ".mozilla/" ".gvfs/" ".Genymobile/" ".Xauthority.SCSBCX" ".icons/" ".zsh_history" ".oh-my-zsh/" "Programs/" "Music/" ".profile" ".gconf/" ".heroku/" ".lastpass/" ".pki/" ".AndroidStudioPreview/" ".vim/" ".Xauthority.6O9ACX" ".distlib/" ".xinputrc" ".rediscli_history" ".bashrc.backup" "tmp/" "Dropbox/" "meteor/" ".viminfo" ".WebIde70/" ".zcompdump" ".m2/" ".gnome/" "Downloads/" "clion/" ".local/" ".Xauthority" "Documents/" ".node-gyp/" ".emacs~" ".bash_history" ".speech-dispatcher/" ".variables.sh" "10-powerline-symbols.conf" "leapx/" ".bash_logout" ".emacs.bak" "alpigc/" ".dmrc" "Desktop/" "www/" ".gstreamer-0.10/" ".xsession-errors" ".dbshell" ".idlerc/" ".gnome2_private/" ".bashrc" "Public/" ".meteorsession" "./" ".xsession-errors.old" "projects/" "extremeIEEE/" "Videos/" "Pictures/" ".gwhere/" ".gnupg/" ".composer/" ".gitconfig" "swisher/" ".gnome2/" ".zshrc" "test/" ".npmrc" ".yjp/" ".thunderbird/" ".grunt-init/" "emacs24-starter-kit/" ".emacs-places" ".dbus/" ".emacs.d/" ".ICEauthority" ".gem/" ".mysql_history")
+
+ ("/tmp/auto-complete-1.3.1/" (21602 111 299899 952000) "auto-complete-config.elc" "fuzzy.el" "popup.elc" "TODO.txt" "COPYING.FDL.txt" "doc/" "auto-complete.el" "etc/" "COPYING.GPLv3.txt" "Makefile" "auto-complete.elc" "./" "auto-complete-config.el" "fuzzy.elc" "dict/" "popup.el" "../" "README.txt")
+
+ ("/home/" (21273 40626 970092 425000) "gihan/" "../" "lost+found/" "./")
+
+ ("/home/gihan/alpigc/omi/lib/" (21601 63982 403915 126000) "player/" "game/" "../" "game.js" "common/" "ai/" "simulator.js" "playerinterface.js" "./")
+
+ ("/home/gihan/alpigc/omi/" (21601 58248 431967 384000) "LICENSE-Apache-2.0" "lib/" ".jshintrc" "../" "package.json" ".idea/" "README.md" ".gitignore" "node_modules/" ".git/" "Project.ede" "./" "Gruntfile.js" "test/" "omi.iml")
+
+ ("/home/gihan/.emacs.d/elpa/better-defaults-0.1.2/" (21600 43167 870145 389000) "better-defaults.el" "better-defaults-pkg.elc" "../" "better-defaults-pkg.el" "./" "better-defaults.elc" "better-defaults-autoloads.el" "better-defaults-autoloads.el~")
+
+ ("/home/gihan/.emacs.d/elpa/" (21601 63406 215920 377000) "better-defaults-0.1.2/" "magit-1.2.2/" "../" "smex-3.0/" "ido-ubiquitous-2.10/" "popup-0.5/" "find-file-in-project-3.3/" "idle-highlight-mode-1.1.2/" "htmlize-1.39/" "./" "scpaste-0.6.3/" "archives/" "paredit-22/" "auto-complete-1.4/")
+
+ ("/home/gihan/.emacs.d/elpa/auto-complete-1.4/" (21601 63407 791920 363000) "auto-complete-config.elc" "TODO.md" "auto-complete-config.el" "../" "README.md" "COPYING.GPLv3" "auto-complete-autoloads.el" "auto-complete-pkg.elc" "auto-complete.elc" "auto-complete.el" "Makefile" "doc/" "./" "dict/" "auto-complete-pkg.el" "COPYING.FDL")
+
+ ("/home/gihan/alpigc/" (21583 52596 99014 552000) "../" "cheap-taxi/" "./" "omi/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
