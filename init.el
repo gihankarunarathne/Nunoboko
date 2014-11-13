@@ -120,4 +120,4 @@
 (el-get 'sync)
 
 ;; Load Prelude 
-(load "~/.emacs.d/prelude/prelude.el")
+(load "~/.emacs.d/prelude/init.el")
