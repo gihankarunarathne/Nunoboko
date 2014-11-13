@@ -1,2 +1,5 @@
 *.dat
+*.tar
+
 auto-save-list/
+url/

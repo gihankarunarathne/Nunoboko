@@ -114,6 +114,63 @@ Display a list of packages.
 
 ;;;***
 
+;;;### (autoloads nil "hlinum/hlinum" "hlinum/hlinum.el" (21603 48543
+;;;;;;  865070 981000))
+;;; Generated autoloads from hlinum/hlinum.el
+
+(autoload 'hlinum-activate "hlinum/hlinum" "\
+Enable highlighting current line number.
+
+\(fn)" t nil)
+
+(autoload 'hlinum-deactivate "hlinum/hlinum" "\
+Disable highlighting current line number.
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "linum-ex/linum-ex" "linum-ex/linum-ex.el"
+;;;;;;  (21603 48541 993071 35000))
+;;; Generated autoloads from linum-ex/linum-ex.el
+
+(defvar linum-format 'dynamic "\
+Format used to display line numbers. Either a format string
+like \"%7d\", 'dynamic to adapt the width as needed, or a
+function that is called with a line number as its argument and
+should evaluate to a string to be shown on that line. See also
+`linum-before-numbering-hook'.")
+
+(custom-autoload 'linum-format "linum-ex/linum-ex" t)
+
+(autoload 'linum-mode "linum-ex/linum-ex" "\
+Toggle display of line numbers in the left marginal area.
+
+\(fn &optional ARG)" t nil)
+
+(defvar global-linum-mode nil "\
+Non-nil if Global-Linum mode is enabled.
+See the command `global-linum-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `global-linum-mode'.")
+
+(custom-autoload 'global-linum-mode "linum-ex/linum-ex" nil)
+
+(autoload 'global-linum-mode "linum-ex/linum-ex" "\
+Toggle Linum mode in all buffers.
+With prefix ARG, enable Global-Linum mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Linum mode is enabled in all buffers where
+`linum-on' would do it.
+See `linum-mode' for more information on Linum mode.
+
+\(fn &optional ARG)" t nil)
+
+;;;***
+
 ;;;### (autoloads nil "nodejs-repl/nodejs-repl" "nodejs-repl/nodejs-repl.el"
 ;;;;;;  (21603 12608 445791 740000))
 ;;; Generated autoloads from nodejs-repl/nodejs-repl.el
@@ -129,7 +186,7 @@ Run Node.js REPL.
 ;;;;;;  "el-get/el-get-byte-compile.el" "el-get/el-get-core.el" "el-get/el-get-custom.el"
 ;;;;;;  "el-get/el-get-dependencies.el" "el-get/el-get-install.el"
 ;;;;;;  "el-get/el-get-methods.el" "el-get/el-get-notify.el" "el-get/el-get-recipes.el"
-;;;;;;  "el-get/el-get-status.el") (21603 12609 100163 335000))
+;;;;;;  "el-get/el-get-status.el") (21603 48544 121200 758000))
 
 ;;;***
 
