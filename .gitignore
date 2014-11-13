@@ -3,6 +3,7 @@
 *.zip
 
 prelude/
+!prelude/personal
 
 *~
 *.elc
@@ -11,3 +12,4 @@ elpa
 el-get
 url/
 savefile/
+projectile-bookmarks.eld
