@@ -1,5 +1,6 @@
 *.dat
 *.tar
+*.zip
 
 auto-save-list/
 url/
