@@ -81,6 +81,7 @@
 (global-set-key "\M-d" 'delete-word)
 (global-set-key "\M-h" 'backward-delete-word)
 (global-set-key "\M-u" 'zap-to-char)
+(global-set-key "\C-c\C-d\c" 'desktop-change-dir)
 
 ;; ---------------------------
 ;; -- JS Mode configuration --
@@ -123,3 +124,5 @@
 
 ;; Save desktop
 (desktop-save-mode 1)
+
+;;; init.el ends here

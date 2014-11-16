@@ -13,3 +13,6 @@ el-get
 url/
 savefile/
 projectile-bookmarks.eld
+
+*.desktop
+desktop/
