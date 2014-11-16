@@ -2,7 +2,7 @@
 *.tar
 *.zip
 
-prelude/
+prelude/*
 !prelude/personal
 
 *~

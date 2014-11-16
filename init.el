@@ -1,4 +1,5 @@
 ;; -*- mode: emacs-lisp -*-
+;; Comment:
 ;; Simple .emacs configuration
 
 ;; ---------------------
@@ -31,7 +32,6 @@
 
 (hlinum-activate)
 
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -41,7 +41,6 @@
  '(custom-enabled-themes (quote (deeper-blue)))
  ;'(ede-project-directories (quote ("/home/gihan/alpigc/omi")))
 )
-
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -54,7 +53,7 @@
  '(flymake-errline ((((class color) (background light)) (:background "Red"))))
  '(font-lock-comment-face ((((class color) (min-colors 8) (background light)) (:foreground "red"))))
  '(fundamental-mode-default ((t (:inherit default))))
- '(highlight ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
+ '(highlight ((((class color) (min-colors 8)) (:background "dark slate blue" :foreground "green"))))
  '(isearch ((((class color) (min-colors 8)) (:background "yellow" :foreground "black"))))
  ;'(linum ((t (:foreground "dark gray" :weight bold))))
  ;'(linum ((t (:foreground "black" :weight bold))))
@@ -89,7 +88,7 @@
 (load "js-config.el")
 (add-to-list 'load-path "~/.emacs.d/startup/jade-mode") ;; github.com/brianc/jade-mode
 (require 'sws-mode)
-(require 'jade-mode)    
+(require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
@@ -119,5 +118,8 @@
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
 (el-get 'sync)
 
-;; Load Prelude 
+;; Load Prelude
 (load "~/.emacs.d/prelude/init.el")
+
+;; Save desktop
+(desktop-save-mode 1)

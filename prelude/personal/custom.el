@@ -6,7 +6,8 @@
  '(custom-enabled-themes (quote (deeper-blue)))
  '(custom-safe-themes
    (quote
-    ("582e9531b4f788cb66441b58038759f140c3670a403b9c124fa3ea7b7ab0d967" default))))
+    ("582e9531b4f788cb66441b58038759f140c3670a403b9c124fa3ea7b7ab0d967" default)))
+ '(ede-project-directories (quote ("/home/gihan/leapx/leapx-freemium"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -18,7 +19,7 @@
  '(flymake-errline ((((class color) (background light)) (:background "Red"))))
  '(font-lock-comment-face ((((class color) (min-colors 8) (background light)) (:foreground "red"))))
  '(fundamental-mode-default ((t (:inherit default))))
- '(highlight ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
+ '(highlight ((((class color) (min-colors 8)) (:background "dark slate blue" :foreground "green"))))
  '(isearch ((((class color) (min-colors 8)) (:background "yellow" :foreground "black"))))
  '(linum ((t (:foreground "dark gray" :weight light))))
  '(region ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
