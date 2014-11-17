@@ -121,6 +121,16 @@
 
 ;; Load Prelude
 (load "~/.emacs.d/prelude/init.el")
+; guide (define-key global-map (kbd "s-r") 'recentf-open-files)
+(define-key global-map (kbd "s-d") 'projectile-find-dir)
+(define-key global-map (kbd "s-p") 'projectile-switch-project)
+(define-key global-map (kbd "s-f") 'projectile-find-file)
+(define-key global-map (kbd "s-g") 'projectile-grep)
+(define-key global-map (kbd "s-w") 'desktop-change-dir)
+;(define-key projectile-mode-map [?\s-d] 'projectile-find-dir)
+;(define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
+;(define-key projectile-mode-map [?\s-f] 'projectile-find-file)
+;(define-key projectile-mode-map [?\s-g] 'projectile-grep)
 
 ;; Save desktop
 (desktop-save-mode 1)
