@@ -127,10 +127,30 @@
 (define-key global-map (kbd "s-f") 'projectile-find-file)
 (define-key global-map (kbd "s-g") 'projectile-grep)
 (define-key global-map (kbd "s-w") 'desktop-change-dir)
+(define-key global-map (kbd "s-e") 'projectile-recentf)
+(define-key global-map (kbd "s-b") 'prelude-switch-to-previous-buffer)
 ;(define-key projectile-mode-map [?\s-d] 'projectile-find-dir)
 ;(define-key projectile-mode-map [?\s-p] 'projectile-switch-project)
 ;(define-key projectile-mode-map [?\s-f] 'projectile-find-file)
 ;(define-key projectile-mode-map [?\s-g] 'projectile-grep)
+
+;; Move between Windows (cursor) -- like Terminator
+(global-set-key [M-left] 'windmove-left)
+(global-set-key [M-right] 'windmove-right)
+(define-key global-map (kbd "s-<up>") 'windmove-up)
+(define-key global-map (kbd "s-<down>") 'windmove-down)
+;; Transpose two buffers
+(defun transpose-buffers (arg)
+  "Transpose the buffers shown in two windows."
+  (interactive "p")
+  (let ((selector (if (>= arg 0) 'next-window 'previous-window)))
+    (while (/= arg 0)
+      (let ((this-win (window-buffer))
+            (next-win (window-buffer (funcall selector))))
+        (set-window-buffer (selected-window) next-win)
+        (set-window-buffer (funcall selector) this-win)
+        (select-window (funcall selector)))
+      (setq arg (if (plusp arg) (1- arg) (1+ arg)))))) ;-- end transpose
 
 ;; Save desktop
 (desktop-save-mode 1)

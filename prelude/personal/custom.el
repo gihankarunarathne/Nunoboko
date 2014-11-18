@@ -22,6 +22,7 @@
  '(highlight ((((class color) (min-colors 8)) (:background "dark slate blue" :foreground "green"))))
  '(isearch ((((class color) (min-colors 8)) (:background "yellow" :foreground "black"))))
  '(linum ((t (:foreground "dark gray" :weight light))))
+ '(magit-item-highlight ((t (:inherit default))))
  '(region ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
  '(secondary-selection ((((class color) (min-colors 8)) (:background "gray" :foreground "cyan"))))
  '(show-paren-match ((((class color) (background light)) (:background "black"))))
