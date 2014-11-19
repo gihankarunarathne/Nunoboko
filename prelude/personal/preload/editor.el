@@ -14,6 +14,12 @@
 ;(hlinum-activate)
 ;(setq linum-highlight-face "white")
 
-(set-face-background 'hl-line "dark slate blue")
-(set-face-foreground 'hl-line "dark slate green")
+(set-face-background 'hl-line "#002b36")
+(set-face-foreground 'hl-line "dark orange")
 (set-face-foreground 'highlight nil)
+
+(setq-default cursor-type 'bar) ;;www.gnu.org/software/emacs/manual/html_node/elisp/Cursor-Parameters.html
+(setq-default cursor-color "darkGrey")
+
+(provide 'editor)
+;;; editor.el ends here

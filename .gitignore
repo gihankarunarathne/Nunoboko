@@ -16,3 +16,6 @@ projectile-bookmarks.eld
 
 *.desktop
 desktop/
+
+# Ignore third party
+vendor/

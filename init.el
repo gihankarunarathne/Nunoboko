@@ -38,7 +38,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  ;'(ansi-color-names-vector ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#ad7fa8" "#8cc4ff" "#eeeeec"])
- '(custom-enabled-themes (quote (deeper-blue)))
+ ;'(custom-enabled-themes (quote (tango-2)))
  ;'(ede-project-directories (quote ("/home/gihan/alpigc/omi")))
 )
 (custom-set-faces
@@ -154,5 +154,42 @@
 
 ;; Save desktop
 (desktop-save-mode 1)
+
+;; Color theme - http://ergoemacs.org/emacs/emacs_playing_with_color_theme.html
+;; List of default themes
+
+;(load-theme 'adwaita)
+;(load-theme 'deeper-blue)
+;(load-theme 'dichromacy)
+;(load-theme 'light-blue)
+;(load-theme 'manoj-dark)
+;(load-theme 'misterioso)
+;(load-theme 'tango)
+(load-theme 'tango-dark)
+;(load-theme 'tsdh-dark)
+;(load-theme 'tsdh-light)
+;(load-theme 'wheatgrass)
+;(load-theme 'whiteboard)
+;(load-theme 'wombat)
+
+;; Install custom theme - 1. install it via melpa 2. set in following
+;(package-initialize)
+;(require 'color-theme)
+;(setq color-theme-is-global t)
+;(color-theme-initialize)
+;(color-theme-classic)
+
+;; Tern - JS code analyzer (http://ternjs.net/doc/manual.html#emacs)
+(add-to-list 'load-path "~/.emacs.d/vendor/tern/emacs/")
+(autoload 'tern-mode "tern.el" nil t)
+(add-hook 'js-mode-hook (lambda () (tern-mode t))) ;; Optional: Enable tern-mode on JS files
+
+;; Enable Auto completing with Tern
+;(eval-after-load 'tern
+;  '(progn
+;     (require 'tern-auto-complete)
+;     (tern-ac-setup))) */
+
+
 
 ;;; init.el ends here
