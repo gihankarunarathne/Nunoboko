@@ -5,6 +5,13 @@
 ;; ---------------------
 ;; -- Global Settings --
 ;; ---------------------
+;;; Code:
+; Set global PATH
+;(setenv "PATH" (concat (getenv "PATH") ":/home/gihan/.emacs.d/vendor/web-beautify/node_modules/bin"))
+(setq exec-path (append exec-path '("~/.emacs.d/vendor/web-beautify/node_modules/bin")))
+;(setq exec-path (append exec-path '("/opt/node/bin")))
+;(error (getenv "PATH"))
+
 (add-to-list 'load-path "~/.emacs.d/startup")  ; This may not be appeared if you have already added.
 (require 'cl)
 (require 'ido)
@@ -12,7 +19,7 @@
 (require 'uniquify)
 (require 'ansi-color)
 (require 'recentf)
-;(require 'linum)
+;; (require 'linum)
 (require 'hlinum)
 (require 'smooth-scrolling)
 (require 'whitespace)
@@ -59,7 +66,8 @@
  ;'(linum ((t (:foreground "black" :weight bold))))
  '(region ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
  '(secondary-selection ((((class color) (min-colors 8)) (:background "gray" :foreground "cyan"))))
- '(show-paren-match ((((class color) (background light)) (:background "black"))))
+ ;; '(show-paren-match ((((class color) (background black)) (:background "#073642" :weight "extra-bold"))))
+ '(show-paren-match ((t (:background "dark green" :weight bold))))
  '(vertical-border ((t nil)))
 
 )
@@ -190,6 +198,26 @@
 ;     (require 'tern-auto-complete)
 ;     (tern-ac-setup))) */
 
+;; web-beautify
+;(add-to-list 'load-path "/opt/node/bin/js-beautify")
+(add-to-list 'load-path "~/.emacs.d/vendor/web-beautify/")
+;; Basic Setup
+(require 'web-beautify) ;; Not necessary if using ELPA package
+(eval-after-load 'js2-mode
+  '(define-key js2-mode-map (kbd "C-c b") 'web-beautify-js))
+;; Or if you're using 'js-mode' (a.k.a 'javascript-mode')
+(eval-after-load 'js
+  '(define-key js-mode-map (kbd "C-c b") 'web-beautify-js))
 
+(eval-after-load 'json-mode
+  '(define-key json-mode-map (kbd "C-c b") 'web-beautify-js))
+
+(eval-after-load 'sgml-mode
+  '(define-key html-mode-map (kbd "C-c b") 'web-beautify-html))
+
+(eval-after-load 'css-mode
+  '(define-key css-mode-map (kbd "C-c b") 'web-beautify-css))
+
+(show-paren-mode 1)
 
 ;;; init.el ends here

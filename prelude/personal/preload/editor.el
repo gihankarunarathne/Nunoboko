@@ -21,5 +21,7 @@
 (setq-default cursor-type 'bar) ;;www.gnu.org/software/emacs/manual/html_node/elisp/Cursor-Parameters.html
 (setq-default cursor-color "darkGrey")
 
+(show-paren-mode -1)
+
 (provide 'editor)
 ;;; editor.el ends here
