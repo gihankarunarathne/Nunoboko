@@ -1,3 +1,8 @@
+.emacs.desktop
+desktop
+ac-comphist.dat
+
+# Predule Settings
 *~
 *.elc
 auto-save-list
