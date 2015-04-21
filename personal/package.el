@@ -14,8 +14,10 @@
 ;; Move between Windows (cursor) -- like Terminator
 (global-set-key [M-left] 'windmove-left)
 (global-set-key [M-right] 'windmove-right)
-(define-key global-map (kbd "s-<up>") 'windmove-up)
-(define-key global-map (kbd "s-<down>") 'windmove-down)
+(global-set-key [M-up] 'windmove-up)
+(global-set-key [M-down] 'windmove-down)
+;(define-key global-map (kbd "s-<up>") 'windmove-up)
+;(define-key global-map (kbd "s-<down>") 'windmove-down)
 ;; Transpose two buffers
 (defun transpose-buffers (arg)
   "Transpose the buffers shown in two windows."
